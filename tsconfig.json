@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",                         
+    "module": "commonjs",                     
+    "strict": true,                           
+    "esModuleInterop": true,                  
+    "skipLibCheck": true,                     
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist"
+  },
+   "exclude": [
+    "node_modules",
+    "dist",
+    "front",
+  ],
+   "include": [
+    "src/**/*.ts",
+    "src/*.ts",
+  ],
+  "files": [
+    "src/app.ts"
+  ]
+
+}

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-base {
+  @apply bg-gray-800;
+}
+
+* {
+  --slider-handle-ring-color: rgb(249 115 22 / 0.25);
+}
+
+.slider-touch-area {
+  @apply border-orange-500 ring-0;
+}
+.slider-handle {
+  @apply bg-gray-100;
+}
+.slider-connect {
+  @apply bg-orange-500;
+}
+.slider-tooltip {
+  @apply bg-orange-500 border-orange-500;
+}
