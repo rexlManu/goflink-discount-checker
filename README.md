@@ -1,8 +1,12 @@
-# Discount checker
+# Discount checker for flink
 
-goflink aka flink discount checker app with city provied check and amount
+goflink aka flink discount checker app with city provided check and amount
 
-# Planing
+- You can find flink codes [here](./CODES.md).
+- Flink api endpoint docs [here](./API.md).
+- Frontend [here](./front/README.md).
+
+## Planing
 POST /create-checker
 
 Body:
