@@ -11,6 +11,7 @@
     "vue": "^3.2.16"
   },
   "devDependencies": {
+    "@types/node": "^16.11.6",
     "@vitejs/plugin-vue": "^1.9.3",
     "@vueform/slider": "^2.0.5",
     "autoprefixer": "^10.4.0",
