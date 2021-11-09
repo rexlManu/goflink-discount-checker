@@ -9,7 +9,6 @@ import {
   TransitionRoot,
 } from '@headlessui/vue';
 import { request } from '../api';
-import AmountPicker from './AmountPicker.vue';
 import { store } from '../store';
 
 const props = defineProps<{ isOpen: boolean }>();

@@ -9,8 +9,8 @@ import {
   TransitionRoot,
 } from '@headlessui/vue';
 import { request } from '../api';
-import AmountPicker from './AmountPicker.vue';
 import { store } from '../store';
+import Slider from '@vueform/slider/dist/slider.js';
 
 const props = defineProps<{ isOpen: boolean }>();
 const emit = defineEmits(['open']);
@@ -22,6 +22,7 @@ const reset = () => {
 };
 const createChecker = () => {
   spinning.value = true;
+  console.log(amount.value);
 
   request('create-checker', 'post', {
     city: city.value,
@@ -146,10 +147,12 @@ const setIsOpen = (value: boolean) => {
                       for="input-city"
                       >Amount</label
                     >
-                    <AmountPicker
-                      :amount="amount"
-                      @update:amount="amount = $event"
-                    ></AmountPicker>
+                    <Slider
+                      v-model="amount"
+                      v-bind:min="1"
+                      v-bind:max="50"
+                      v-bind:step="0.1"
+                    />
                   </div>
                 </div>
               </div>
@@ -205,3 +208,4 @@ const setIsOpen = (value: boolean) => {
     </Dialog>
   </TransitionRoot>
 </template>
+<style src="@vueform/slider/themes/default.css"></style>
