@@ -11,6 +11,10 @@
   <a href="https://github.com/rexlManu/goflink-discount-checker/blob/master/LICENSE.md"><img src="https://img.shields.io/apm/l/vim-mode?style=for-the-badge" height="30"></a>
 </div>
 
+## Update
+
+Hey, I'm going to put the project on hold, since I'm doing so called "bruteforce" attacks with the tool in the meantime, since I'm using proxies to dodge the RateLimit. I don't want to get legal action for denial of services.
+
 ## Links
 
 - You can find flink codes [here](./CODES.md).
@@ -22,9 +26,9 @@
 ### Docker
 
 1. Build the image
-``docker build -t discount-checker .``
+   `docker build -t discount-checker .`
 2. Run the image
-``docker run -d --name discount-checker discount-checker``
+   `docker run -d --name discount-checker discount-checker`
 
 #### Configuration
 
@@ -36,9 +40,11 @@ VITE_API_URL=""
 ```
 
 ## Planing
+
 POST /create-checker
 
 Body:
+
 - country
 - city
 - amount
@@ -46,9 +52,8 @@ Body:
 -> Checker ID
 
 POST /submit-check
- 
+
 Body:
+
 - checker id
 - promo code
-
-
